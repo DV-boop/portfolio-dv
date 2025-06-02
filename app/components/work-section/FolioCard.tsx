@@ -21,7 +21,7 @@ export default function FolioCard({
   title: string;
   gitLink?: string;
   liveLink: string;
-  about: string;
+  about: string | React.ReactNode;  // <-- yahan change kiya
   stack: string[];
 }) {
   const { ref, inView } = useInView({
@@ -78,7 +78,8 @@ export default function FolioCard({
             </Link>
           </div>
         </div>
-        <p className="text-base text-white/70">{about}</p>
+        {/* Changed from <p> to <div> for about to support ReactNode */}
+        <div className="text-base text-white/70">{about}</div> 
         <div className="flex gap-3 md:gap-4 flex-wrap">
           {stack.map((tech, index) => (
             <Tag key={index}>{tech}</Tag>

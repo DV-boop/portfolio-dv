@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
 import { Kumbh_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -10,43 +9,37 @@ import { ViewProvider } from "@/contexts/ViewContext";
 const kumbhSans = Kumbh_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your_name — DevOps Engineer",
+  title: "D. Harsh — DevOps Engineer",
   description:
-    "A DevOps Engineer passionate about crafting next-gen software. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
+    "I’m D. Harsh, a DevOps Engineer passionate about building reliable, scalable systems using automation, CI/CD pipelines, and Kubernetes. I thrive on delivering efficient infrastructure and deploying seamless software solutions.",
   keywords: [
     "devops",
-    "frontend",
-    "react",
-    "tech",
+    "aws",
+    "terraform",
+    "kubernetes",
+    "ci/cd",
+    "docker",
     "creative developer",
-    "UI development",
-    "frontend engineer",
-    "developer portfolio",
-    "creative development",
-    "nigeria",
-    "software",
-    "software developer",
-    "software engineer",
+    "infrastructure as code",
     "portfolio",
+    "cloud engineer",
+    "software engineer",
+    "SRE",
+    "India",
+    "DevOps Engineer",
   ],
   openGraph: {
-    title: "Your_name — DevOps Engineer",
+    title: "D. Harsh — DevOps Engineer",
     description:
-      "DevOps Engineer at Bluechip Technologies, passionate about crafting next-gen software. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
-    url: "https://www.your_name.me",
-    siteName: "www.your_name.me",
+      "DevOps Engineer focused on scalable cloud infrastructure, CI/CD automation, and Kubernetes. Passionate about building systems that empower software delivery.",
+    url: "#", // Apna domain yahan dalein
+    siteName: "D. Harsh Portfolio",
     images: [
       {
-        url: "https://i.ibb.co/FKMqc28/adeola-badero.png",
-        width: 1200,
-        height: 630,
-        alt: "Your_name — DevOps Engineer",
-      },
-      {
-        url: "https://i.ibb.co/Y8hBTR4/ade-800.png",
+        url: "#", // Image name updated here
         width: 800,
         height: 800,
-        alt: "Your_name — DevOps Engineer",
+        alt: "D. Harsh — DevOps Engineer",
       },
     ],
     locale: "en-US",
@@ -54,11 +47,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your_name — DevOps Engineer",
+    title: "D. Harsh — DevOps Engineer",
     description:
-      "DevOps Engineer at Bluechip Technologies, passionate about crafting next-gen software. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
-    creator: "@iemafzalhassan",
-    images: ["https://i.ibb.co/FKMqc28/adeola-badero.png"],
+      "DevOps Engineer focused on CI/CD, Terraform, Kubernetes, and Cloud Infrastructure. Turning ideas into scalable cloud solutions.",
+    creator: "@dvharsh9", // Aapka Twitter handle agar ho to
+    images: ["#"], // Image name updated here
   },
   robots: {
     index: true,
@@ -82,14 +75,12 @@ export default function RootLayout({
       <body
         className={`${kumbhSans.className} max-w-[90%] xl:max-w-[1223px] w-full mx-auto overflow-x-hidden`}
       >
-        <>
-          <ViewProvider>
-            <Header />
-            {children}
-          </ViewProvider>
-          <Analytics />
-          <SpeedInsights />
-        </>
+        <ViewProvider>
+          <Header />
+          {children}
+        </ViewProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

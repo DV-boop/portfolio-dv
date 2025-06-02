@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import {
-  delay,
   easeIn,
   easeInOut,
   motion,
@@ -95,17 +94,17 @@ export default function Hero() {
         >
           <p className="text-white/60 inline">I&apos;m </p>
           <span className="bg-gradient-to-br bg-clip-text text-transparent from-[#7CC0C4] via-[#548FBA] to-[#3C84C7]">
-          your_username
+            D. Harsh
           </span>
-          <p>a DevOps Engineer</p>
+          <p>Passionate DevOps Engineer building reliable and scalable systems.</p>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={animateIn2}
-          className="text-white/40  text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6 "
+          className="text-white/40 text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6"
         >
-          currently focused on scaling infra and reducing the workload.
+          Dedicated to optimizing infrastructure and automating workflows to boost efficiency.
         </motion.p>
       </div>
 
@@ -119,10 +118,10 @@ export default function Hero() {
           animate={animateIn1}
         >
           <Image
-            src="/image.png"
+            src="/passportsize.jpeg"
             priority
             fill
-            alt="Ade's picture"
+            alt="D. Harsh's picture"
             className="bg-image-radial px-10 pt-20"
           />
         </motion.div>

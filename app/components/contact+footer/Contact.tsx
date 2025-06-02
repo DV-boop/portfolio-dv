@@ -37,7 +37,19 @@ export default function Contact() {
     }
   }, [inView, setSectionInView]);
 
-  const { formState, register, handleSubmit, reset } = useForm();
+  const {
+    formState,
+    register,
+    handleSubmit,
+    reset,
+    setValue,
+  } = useForm({
+    defaultValues: {
+      userName: "D. Harsh",
+      userEmail: "dvharsh9@gmail.com",
+      userMessage: "",
+    },
+  });
   const { errors } = formState;
 
   // For email.js
@@ -68,7 +80,11 @@ export default function Contact() {
             theme: "dark",
             className: `custom-toast font-kumbhSans`,
           });
-          reset();
+          reset({
+            userName: "D. Harsh",
+            userEmail: "dvharsh9@gmail.com",
+            userMessage: "",
+          });
           setTimeout(() => setFormDisplay(!formDisplay), 5000);
         },
         (error) => {
@@ -169,7 +185,11 @@ export default function Contact() {
                   data-blobity
                   onClick={() => {
                     setFormDisplay(false);
-                    reset();
+                    reset({
+                      userName: "D. Harsh",
+                      userEmail: "dvharsh9@gmail.com",
+                      userMessage: "",
+                    });
                   }}
                 />
               </div>

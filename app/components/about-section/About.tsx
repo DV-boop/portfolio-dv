@@ -27,30 +27,28 @@ export default function About() {
         charSpace={"mr-[0.001em]"}
         className={`uppercase ${syne.className} antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80`}
       >
-        I orchestrate seamless cloud infrastructures
+        Building Scalable & Reliable DevOps Solutions
       </AnimatedTitle>
 
       <div className="grid grid-cols-1 lg:grid-cols-[8.5fr_3.5fr] gap-8 mt-6">
         <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-xl md:text-2xl">
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
-            My expertise lies in building and maintaining robust cloud infrastructure and automated deployment pipelines. 
-            I specialize in creating scalable, reliable, and secure systems that empower businesses to deliver value 
-            faster. From containerization to infrastructure as code, I transform complex deployment processes into 
-            streamlined operations.
+            I began my DevOps journey in January 2025, and since then, I have fully equipped myself with the skills necessary to be job-ready. 
+            I specialize in designing and maintaining automated, secure, and scalable cloud infrastructures that drive efficient software delivery.
           </AnimatedBody>
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
-            Since diving into DevOps practices in 2019, I&apos;ve continuously evolved my skillset, mastering various cloud 
-            platforms and automation tools. I&apos;ve developed a deep understanding of CI/CD practices, monitoring solutions, 
-            and security implementations, ensuring systems run efficiently and securely in production environments.
+            My expertise includes Docker, Linux, Jenkins, Terraform, Kubernetes, Ansible, AWS, Prometheus, Grafana, and proficient Bash shell scripting. 
+            I focus on implementing Infrastructure as Code, CI/CD pipelines, and robust monitoring to ensure seamless production environments.
           </AnimatedBody>
           <AnimatedBody className="inline leading-[34px] md:leading-[39px]">
-            Every infrastructure challenge presents an opportunity to innovate and implement best practices. I&apos;m passionate 
-            about creating maintainable, scalable solutions that help teams deliver software more efficiently. Want to know more? Here&apos;s <br className="hidden md:block" />
+            I am passionate about continuous learning and applying best practices to solve infrastructure challenges. 
+            Curious to know more? Here is&nbsp;
+            <br className="hidden md:block" />
             <Link
               className="underline"
-              href={
-                "https://drive.google.com/file/d/link to your drive uploaded resume"
-              }
+              href={"https://drive.google.com/file/d/1pJQYsSXSSy0597uvNFtzitKU6ZSKV6mk/view?usp=sharing"}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               my resume
             </Link>
@@ -68,7 +66,7 @@ export default function About() {
               Cloud & Infrastructure
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              AWS, Azure, Docker, Kubernetes, Terraform, Ansible, Linux, Shell Scripting, Infrastructure as Code (IaC).
+              Docker, Linux, Terraform, Kubernetes, Ansible, AWS, Bash & Shell Scripting
             </AnimatedBody>
           </div>
           <div>
@@ -80,7 +78,7 @@ export default function About() {
               CI/CD & Automation
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              Jenkins, GitHub Actions, GitLab CI, ArgoCD, Helm, Python, Bash, Configuration Management.
+              Jenkins, GitHub Actions, GitLab CI, Python, Bash Scripting, Infrastructure as Code
             </AnimatedBody>
           </div>
           <div>
@@ -92,7 +90,7 @@ export default function About() {
               Monitoring & Security
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              Prometheus, Grafana, ELK Stack, HashiCorp Vault, Security Best Practices, SSL/TLS, IAM.
+              Prometheus, Grafana, ELK Stack, HashiCorp Vault, Security Best Practices
             </AnimatedBody>
           </div>
         </div>

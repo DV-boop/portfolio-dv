@@ -14,7 +14,7 @@ export default function Footer() {
       className="my-6 sm:my-8 text-sm sm:text-base lg:text-lg flex md:justify-between justify-center"
     >
       <p>
-        <span className="text-xl sm:text-2xl">&copy;</span> {curYear} . YOUR NAME . ALL RIGHTS RESERVED
+        <span className="text-xl sm:text-2xl">&copy;</span> {curYear} . D. Harsh . ALL RIGHTS RESERVED
       </p>
       <Link
         className="md:flex hidden items-center gap-1 leading-tight"
