@@ -2,8 +2,8 @@ name: Deploy Next.js site to GitHub Pages
 
 on:
   push:
-    branches: [main]       # jab main branch me push karo tab ye chalega
-  workflow_dispatch:       # manual run ka option bhi dega
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
